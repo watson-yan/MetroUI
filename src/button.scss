@@ -1,0 +1,139 @@
+// default
+.button,.square-button, .cycle-button{
+  display: inline-block;
+  position: relative;
+  padding: 0 1rem;
+  line-height: 2.125rem;
+  font-size: 0.75rem;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #262626;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  &:hover {
+    border-color: #787878;
+  }
+  &:active {
+    background: #eeeeee;
+    color: #262626;
+    box-shadow: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:disabled {
+    background-color: #eaeaea;
+    color: #bebebe;
+    cursor: not-allowed;
+    border-color: transparent;
+  }
+
+  /*
+  * sizes: mini/small/large
+  */
+  &.mini {
+    font-size: .6rem;
+    padding: .2rem .625rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+  }
+  &.small {
+    font-size: .7rem;
+    padding: 0 .625rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+  }
+  &.large {
+    padding: 0 2rem;
+    height: 2.55rem;
+    font-size: 1.05rem;
+    line-height: 2.55rem;
+  }
+
+  // background-color
+  &.primary {
+    color: #fff;
+    background: #2086bf;
+    border-color: #2086bf;
+    &:active {
+      background: #1b6eae;
+    }
+  }
+  &.success {
+    color: #fff;
+    background: #60a917;
+    border-color: #60a917;
+    &:active {
+      background: #128023;
+    }
+  }
+  &.info {
+    color: #fff;
+    background: #59cde2;
+    border-color: #59cde2;
+    &:active {
+      background: #1ba1e2;
+    }
+  }
+  &.danger {
+    color: #fff;
+    background: #ce352c;
+    border-color: #ce352c;
+    &:active {
+      background: #9a1616;
+    }
+  }
+  &.warning {
+    color: #fff;
+    background: #fa6800;
+    border-color: #fa6800;
+    &:active {
+      background: #bf5a15;
+    }
+  }
+  &.link {
+    color: #2086bf;
+    background: transparent;
+    border-color: transparent;
+    &:active {
+      color: #114968;
+    }
+  }
+}
+
+/**
+*  Shape:  square/cycle
+*/
+ .square-button, .cycle-button {
+  padding: 0;
+  width: 2.125rem;
+  height: 2.125rem;
+  text-align: center;
+  overflow: hidden;
+  &.mini {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: .6rem;
+    padding: 0;
+    min-width: 0;
+  }
+  &.small {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: .7rem;
+    padding: 0;
+    min-width: 0;
+  }
+  &.large {
+    padding: 0;
+    font-size: 1.05rem;
+    line-height: 1;
+    width: 2.55rem;
+    height: 2.55rem;
+  }
+}
+
+.cycle-button {
+  border-radius: 100%;
+}
+
