@@ -7,11 +7,39 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/table.css">
+  <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
     <h2 class="title">Table</h2>
     <section class="box">
-      <h3>Main:</h3>
+      <h3>Main</h3>
+      <section>
+        <label class="input-control checkbox">
+          <input type="checkbox" data-class="striped" onclick="addClassName(this)">
+          <span class="check"></span>
+          <span class="caption">striped</span>
+        </label>
+        <label class="input-control checkbox">
+          <input type="checkbox" data-class="hovered" onclick="addClassName(this)">
+          <span class="check"></span>
+          <span class="caption">hovered</span>
+        </label>
+        <label class="input-control checkbox">
+          <input type="checkbox" data-class="cell-hovered" onclick="addClassName(this)">
+          <span class="check"></span>
+          <span class="caption">cell-hovered</span>
+        </label>
+        <label class="input-control checkbox">
+          <input type="checkbox" data-class="border" onclick="addClassName(this)">
+          <span class="check"></span>
+          <span class="caption">border</span>
+        </label>
+        <label class="input-control checkbox">
+          <input type="checkbox" data-class="bordered" onclick="addClassName(this)">
+          <span class="check"></span>
+          <span class="caption">bordered</span>
+        </label>
+      </section>
       <table class="table">
         <thead>
           <tr>
@@ -55,48 +83,36 @@
         </tbody>
       </table>
 
-      <table class="table bordered">
-        <thead>
-          <tr>
-            <th>Column1</th>
-            <th>Column2</th>
-            <th>Column3</th>
-            <th>Column4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-          </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-          </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-          </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-          </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-          </tr>
-        </tbody>
-      </table>
+      <xmp>
+<table class="table">
+<table class="table striped">
+<table class="table hovered"> 
+<table class="table cell-hovered"> 
+<table class="table border"> 
+<table class="table bordered"> 
+      </xmp>
     </section>
+    <br><br><br>
+    <script>
+      // add class for table
+      function addClassName(element) {
+        if (!element) {
+          return
+        }
+        var clsName = element.getAttribute('data-class')
+        if (!clsName) {
+          return
+        }
+        var table = document.querySelector('table')
+        if (table.className.indexOf(clsName) !== -1) {
+          table.className = table.className.replace(' ' + clsName, '')
+          if (!table.className) {
+            table.className = 'table'
+          }
+          return
+        }
+        table.className += ' ' + clsName
+      }
+    </script>
 </body>
 </html>

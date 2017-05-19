@@ -8,23 +8,214 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/form.css">
   <style type="text/css">
+    form {
+      width: 50%;
+    }
     form .input-control {
       width: 100%;
+    }
+    h5 {
+      margin: 10px; font-weight: 400;
     }
   </style>
 </head>
 <body>
     <h2 class="title">Form</h2>
     <section class="box">
-        <h3>Default</h3>
+        <h3>Text && Password</h3>
         <form>
-          <div style="width: 50%;">
-            <span>Simple Text Input</span>
-            <div class="input-control">
+          <section class="form-group">
+            <label>Text</label>
+            <div class="input-control text">
                 <input type="text">
             </div>
-          </div>
+          </section>
+          <section class="form-group">
+            <label>Password</label>
+            <div class="input-control text">
+                <input type="password">
+            </div>
+          </section>
+          <section class="form-group">
+            <label>Placeholder</label>
+            <div class="input-control text">
+                <input type="text" placeholder="Input your text here...">
+            </div>
+          </section>
+          <section class="form-group">
+            <label>Readonly Input</label>
+            <div class="input-control text">
+                <input type="text" value="Metro UI" readonly>
+            </div>
+          </section>
+          <section class="form-group">
+            <label>Disabled Input</label>
+            <div class="input-control text">
+                <input type="text" value="Metro UI" disabled>
+            </div>
+          </section>
         </form>
+        <xmp>
+<div class="input-control">
+    <input type="text">
+</div>
+
+<div class="input-control">
+    <input type="password">
+</div>
+        </xmp>
     </section>
+
+    <section class="box">
+      <h3>RadioBox && CheckBox</h3>
+      <section class="form-group">
+        <h5 style="margin: 10px; font-weight: 400;">1. CheckBoxs</h5>
+        <label class="input-control checkbox">
+          <input type="checkbox">
+          <span class="check"></span>
+          <span class="caption">Check me</span>
+        </label>
+        <label class="input-control checkbox">
+          <input type="checkbox" disabled>
+          <span class="check"></span>
+          <span class="caption">Check me</span>
+        </label>
+
+        <h5 style="margin: 10px; font-weight: 400;">2. Radio</h5>
+        <label class="input-control radio">
+          <input type="radio" name="radio">
+          <span class="check"></span>
+          <span class="caption">Select me</span>
+        </label>
+
+        <label class="input-control radio">
+          <input type="radio" name="radio">
+          <span class="check"></span>
+          <span class="caption">Select me</span>
+        </label>
+
+        <label class="input-control radio">
+          <input type="radio" name="radio" disabled>
+          <span class="check"></span>
+          <span class="caption">Select me</span>
+        </label>
+      </section>
+
+      <xmp>
+// checkbox
+<label class="input-control radio">
+  <input type="radio" name="radio">
+  <span class="check"></span>
+  <span class="caption">Select me</span>
+</label>
+
+// radio
+<label class="input-control radio">
+  <input type="radio" name="radio">
+  <span class="check"></span>
+  <span class="caption">Select me</span>
+</label>
+      </xmp>
+    </section>
+    
+    <!--swither-->
+    <section class="box">
+        <h3>Switchers</h3>
+        <section class="form-group">
+            <h5>1. Modern switcher</h5>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
+
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="check"></span>
+            </label>
+
+            <label class="switch">
+              <input type="checkbox" disabled>
+              <span class="check"></span>
+            </label>
+
+            <label class="switch">
+              <input type="checkbox" checked disabled>
+              <span class="check"></span>
+            </label>
+        </section>
+
+        <section class="form-group">
+          <h5>2. Original swither</h5>
+          <label class="switch-original">
+            <input type="checkbox">
+            <span class="check"></span>
+          </label>
+          <label class="switch-original">
+            <input type="checkbox" checked>
+            <span class="check"></span>
+          </label>
+          <label class="switch-original">
+            <input type="checkbox" disabled>
+            <span class="check"></span>
+          </label>
+          <label class="switch-original">
+            <input type="checkbox" checked disabled>
+            <span class="check"></span>
+          </label>
+        </section>
+
+        <xmp>
+<label class="switch">
+  <input type="checkbox">
+  <span class="check"></span>
+</label>
+<label class="switch">
+  <input type="checkbox" disabled>
+  <span class="check"></span>
+</label>
+<label class="switch-original">
+  <input type="checkbox">
+  <span class="check"></span>
+</label>
+
+        </xmp>
+    </section>
+
+    <section class="box">
+        <h3>Text filed states</h3>
+        <h5>1. error</h5>
+        <div class="input-control error">
+            <input type="text">
+        </div>
+        <h5>2. warning</h5>
+        <div class="input-control warning">
+            <input type="text">
+        </div>
+        <h5>3. success</h5>
+        <div class="input-control success">
+            <input type="text">
+        </div>
+        <h5>4. required</h5>
+        <div class="input-control required">
+          <input type="text">
+        </div>
+        <xmp>
+<div class="input-control error">
+    <input type="text">
+</div>
+<div class="input-control warning">
+    <input type="text">
+</div>
+<div class="input-control success">
+    <input type="text">
+</div>
+<div class="input-control required">
+    <input type="text">
+</div>    
+        </xmp>
+    </section>
+
+    <br><br><br>
+  
 </body>
 </html>
