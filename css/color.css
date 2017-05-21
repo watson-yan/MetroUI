@@ -1,0 +1,164 @@
+/**
+* Background
+*/
+.bg-black {
+  background: black !important; }
+
+.bg-white {
+  background: white !important; }
+
+.bg-lime {
+  background: #a4c400 !important; }
+
+.bg-green {
+  background: #60a917 !important; }
+
+.bg-emerald {
+  background: #008a00 !important; }
+
+.bg-teal {
+  background: #00aba9 !important; }
+
+.bg-blue {
+  background: #00aff0 !important; }
+
+.bg-cyan {
+  background: #1ba1e2 !important; }
+
+.bg-cobalt {
+  background: #0050ef !important; }
+
+.bg-indigo {
+  background: #6a00ff !important; }
+
+.bg-violet {
+  background: #aa00ff !important; }
+
+.bg-pink {
+  background: #dc4fad !important; }
+
+.bg-magenta {
+  background: #d80073 !important; }
+
+.bg-crimson {
+  background: #a20025 !important; }
+
+.bg-red {
+  background: #ce352c !important; }
+
+.bg-orange {
+  background: #fa6800 !important; }
+
+.bg-amber {
+  background: #f0a30a !important; }
+
+.bg-yellow {
+  background: #e3c800 !important; }
+
+.bg-brown {
+  background: #825a2c !important; }
+
+.bg-olive {
+  background: #6d8764 !important; }
+
+.bg-steel {
+  background: #647687 !important; }
+
+.bg-mauve {
+  background: #76608a !important; }
+
+.bg-taupe {
+  background: #87794e !important; }
+
+.bg-gray {
+  background: #555555 !important; }
+
+.bg-dark {
+  background: #1d1d1d !important; }
+
+.bg-darker {
+  background: #222222 !important; }
+
+.bg-darkBrown {
+  background: #63362f !important; }
+
+.bg-darkCrimson {
+  background: #640024 !important; }
+
+.bg-darkMagenta {
+  background: #81003c !important; }
+
+.bg-darkIndigo {
+  background: #4b0096 !important; }
+
+.bg-darkCyan {
+  background: #1b6eae !important; }
+
+.bg-darkCobalt {
+  background: #00356a !important; }
+
+.bg-darkTeal {
+  background: #004050 !important; }
+
+.bg-darkEmerald {
+  background: #003e00 !important; }
+
+.bg-darkGreen {
+  background: #128023 !important; }
+
+.bg-darkOrange {
+  background: #bf5a15 !important; }
+
+.bg-darkRed {
+  background: #9a1616 !important; }
+
+.bg-darkPink {
+  background: #9a165a !important; }
+
+.bg-darkViolet {
+  background: #57169a !important; }
+
+.bg-darkBlue {
+  background: #16499a !important; }
+
+.bg-lightBlue {
+  background: #4390df !important; }
+
+.bg-lightRed {
+  background: #da5a53 !important; }
+
+.bg-lightGreen {
+  background: #7ad61d !important; }
+
+.bg-lighterBlue {
+  background: #00ccff !important; }
+
+.bg-lightTeal {
+  background: #45fffd !important; }
+
+.bg-lightOlive {
+  background: #78aa1c !important; }
+
+.bg-lightOrange {
+  background: #ffc194 !important; }
+
+.bg-lightPink {
+  background: #f472d0 !important; }
+
+.bg-grayDark {
+  background: #333333 !important; }
+
+.bg-grayDarker {
+  background: #222222 !important; }
+
+.bg-grayLight {
+  background: #999999 !important; }
+
+.bg-grayLighter {
+  background: #eeeeee !important; }
+
+/*
+* FontColor
+*/
+.fg-white {
+  color: white; }

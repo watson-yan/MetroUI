@@ -1,0 +1,67 @@
+/**
+* Background
+*/
+@mixin bg($color) {
+  background: $color !important;
+}
+
+.bg-black {@include bg(black)}
+.bg-white {@include bg(white)}
+.bg-lime {@include bg(#a4c400)}
+.bg-green {@include bg(#60a917)}
+.bg-emerald{@include bg(#008a00)}
+.bg-teal{@include bg(#00aba9)}
+.bg-blue{@include bg(#00aff0)}
+.bg-cyan{@include bg(#1ba1e2)}
+.bg-cobalt{@include bg(#0050ef)}
+.bg-indigo{@include bg(#6a00ff)}
+.bg-violet{@include bg(#aa00ff)}
+.bg-pink{@include bg(#dc4fad)}
+.bg-magenta{@include bg(#d80073)}
+.bg-crimson{@include bg(#a20025)}
+.bg-red{@include bg(#ce352c)}
+.bg-orange{@include bg(#fa6800)}
+.bg-amber{@include bg(#f0a30a)}
+.bg-yellow{@include bg(#e3c800)}
+.bg-brown{@include bg(#825a2c)}
+.bg-olive{@include bg(#6d8764)}
+.bg-steel{@include bg(#647687)}
+.bg-mauve{@include bg(#76608a)}
+.bg-taupe{@include bg(#87794e)}
+.bg-gray{@include bg(#555555 )}
+.bg-dark{@include bg(#1d1d1d)}
+.bg-darker{@include bg(#222222)}
+.bg-darkBrown{@include bg(#63362f)}
+.bg-darkCrimson{@include bg(#640024)}
+.bg-darkMagenta{@include bg(#81003c)}
+.bg-darkIndigo{@include bg(#4b0096)}
+.bg-darkCyan{@include bg(#1b6eae)}
+.bg-darkCobalt{@include bg(#00356a)}
+.bg-darkTeal{@include bg(#004050)}
+.bg-darkEmerald{@include bg(#003e00)}
+.bg-darkGreen{@include bg(#128023)}
+.bg-darkOrange{@include bg(#bf5a15)}
+.bg-darkRed{@include bg(#9a1616)}
+.bg-darkPink{@include bg(#9a165a)}
+.bg-darkViolet{@include bg(#57169a)}
+.bg-darkBlue{@include bg(#16499a)}
+.bg-lightBlue{@include bg(#4390df)}
+.bg-lightRed{@include bg(#da5a53)}
+.bg-lightGreen{@include bg(#7ad61d)}
+.bg-lighterBlue{@include bg(#00ccff)}
+.bg-lightTeal{@include bg(#45fffd)}
+.bg-lightOlive{@include bg(#78aa1c)}
+.bg-lightOrange{@include bg(#ffc194)}
+.bg-lightPink{@include bg(#f472d0)}
+.bg-grayDark{@include bg(#333333)}
+.bg-grayDarker{@include bg(#222222)}
+.bg-grayLight{@include bg(#999999)}
+.bg-grayLighter{@include bg(#eeeeee)}
+
+/*
+* FontColor
+*/
+@mixin fg($color) {
+  color: $color;
+}
+.fg-white {@include fg(white)}
