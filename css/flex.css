@@ -54,6 +54,9 @@
   .flex-grid .row .cell {
     -webkit-flex: 0 0 50%;
     flex: 0 0 8.33333333%; }
+  .flex-grid .row.flex-just-center {
+    -webkit-justify-content: center;
+    justify-content: center; }
   .flex-grid .row.flex-just-end {
     -webkit-justify-content: flex-end;
     justify-content: flex-end; }

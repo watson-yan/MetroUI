@@ -1,4 +1,23 @@
 // default
+@mixin btnColor($bgColor1, $bgColor2, $fgColor:#fff) {
+    color: $fgColor;
+    background: $bgColor1;
+    border-color: $bgColor1;
+    &:active {
+      background: $bgColor2;
+    }
+}
+
+@mixin outline($fgColor, $active, $bgColor: #fff) {
+  color: $fgColor;
+  background: $bgColor;
+  border-color: $fgColor;
+  &:active {
+    color: $active;
+    border-color: $active;
+  }
+}
+
 .button,.square-button, .cycle-button{
   display: inline-block;
   position: relative;
@@ -52,52 +71,44 @@
 
   // background-color
   &.primary {
-    color: #fff;
-    background: #2086bf;
-    border-color: #2086bf;
-    &:active {
-      background: #1b6eae;
+    @include btnColor(#2086bf, #1b6eae);
+    &.outline {
+      @include outline(#2086bf, #1b6eae);
     }
   }
   &.success {
-    color: #fff;
-    background: #60a917;
-    border-color: #60a917;
-    &:active {
-      background: #128023;
+    @include btnColor(#60a917, #128023);
+    &.outline {
+      @include outline(#60a917, #128023);
     }
   }
   &.info {
-    color: #fff;
-    background: #59cde2;
-    border-color: #59cde2;
-    &:active {
-      background: #1ba1e2;
+    @include btnColor(#59cde2, #1ba1e2);
+    &.outline {
+      @include outline(#59cde2, #1ba1e2);
     }
   }
   &.danger {
-    color: #fff;
-    background: #ce352c;
-    border-color: #ce352c;
-    &:active {
-      background: #9a1616;
+    @include btnColor(#ce352c, #9a1616);
+    &.outline {
+      @include outline(#ce352c, #9a1616);
     }
   }
   &.warning {
-    color: #fff;
-    background: #fa6800;
-    border-color: #fa6800;
-    &:active {
-      background: #bf5a15;
+    @include btnColor(#fa6800, #bf5a15);
+    &.outline {
+      @include outline(#fa6800, #bf5a15);
     }
   }
   &.link {
-    color: #2086bf;
-    background: transparent;
-    border-color: transparent;
+    @include btnColor(transparent, transparent, #114968);
     &:active {
       color: #114968;
     }
+  }
+
+  img {
+    vertical-align: middle;
   }
 }
 
@@ -137,3 +148,17 @@
   border-radius: 100%;
 }
 
+.btn-group {
+  font-size: 0;
+  .button,.square-button {
+    &:hover {
+      &+.button, &+.square-button {
+        margin-left: 0px;
+        border-left: none;
+      }
+    }
+    &+.button, &+.square-button {
+      margin-left: -1px;
+    }
+  }
+}

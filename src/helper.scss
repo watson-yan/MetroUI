@@ -9,20 +9,20 @@
 .no-margin {
   margin: 0;
 }
-.mo-margin-top {
+.no-margin-top {
   margin-top: 0
 }
-.mo-margin-left {
+.no-margin-left {
   margin-right: 0
 }
-.mo-margin-bottom {
+.no-margin-bottom {
   margin-bottom: 0
 }
-.mo-margin-left {
+.no-margin-left {
   margin-left: 0
 }
 
-/**
+/*
 * padding
 */
 @for $i from 1 to 11 {
@@ -33,16 +33,16 @@
 .no-padding {
   padding: 0;
 }
-.mo-padding-top {
+.no-padding-top {
   padding-top: 0
 }
-.mo-padding-left {
+.no-padding-left {
   padding-right: 0
 }
-.mo-padding-bottom {
+.no-padding-bottom {
   padding-bottom: 0
 }
-.mo-padding-left {
+.no-padding-left {
   padding-left: 0
 }
 
@@ -101,4 +101,24 @@
 .clearfix{
   overflow:auto;
   _height:1%;
+}
+
+
+/*
+* text
+*/
+.text-ellipsis {
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@for $i from 1 to 6 {
+  .line-clamp#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+  }
 }

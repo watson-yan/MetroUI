@@ -6,7 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/flex.css">
+  <link rel="stylesheet" href="../css/color.css">
   <link rel="stylesheet" href="../css/helper.css">
+  <style >
+    .debug {
+      border: 1px dashed red;
+    }
+    .demo-float li{
+        float: left;
+        width: 18%;
+        padding: 10px;
+    }
+  </style>
 </head>
 <body>
    <h2 class="title">
@@ -15,10 +27,130 @@
 
    <section class="box">
      <h3>Margin</h3>
-     <div class="margin10">
-       margin10
+     <div class="flex-grid">
+        <section class="row">
+          <div class="debug">
+            <div class="margin10">
+                margin10
+            </div>
+          </div>
+          <div class="debug">
+            <div class="margin20">
+                margin20
+            </div>
+          </div>
+          <div class="debug">
+            <div class="margin30">
+                margin30
+            </div>
+          </div>
+        </section>
+     </div>
+     <xmp>
+<div class="margin10">
+    margin10
+</div>
+<div class="margin20">
+    margin20
+</div>
+<div class="margin30">
+    margin30
+</div>
+     </xmp>
+   </section>
+
+   <section class="box">
+     <h3>padding</h3>
+     <div class="flex-grid">
+       <section class="row">
+         <div class="padding10 debug">
+           padding10
+         </div>
+         <div class="padding20 debug">
+           padding10
+         </div>
+         <div class="padding30 debug">
+           padding10
+         </div>
+       </section>
      </div>
 
+      <xmp>
+<div class="padding10">
+    padding10
+</div>
+<div class="padding20">
+    padding20
+</div>
+<div class="padding30">
+    padding30
+</div>
+     </xmp>
    </section>
+
+
+   <section class="box">
+     <h3>text-ellipsis</h3>
+     <p class="text-ellipsis fg-indigo">
+        Honour (also honor in American English, see spelling differences; from the Latin word honor) is an abstract concept entailing a perceived quality of worthiness and respectability that affects both the social standing and the self-evaluation of an individual or corporate body such as a family, school, regiment or nation. Accordingly, individuals (or corporate bodies) are assigned worth and stature based on the harmony of their actions with a specific code of honour, and the moral code of the society at large.Dr Samuel Johnson, in his A Dictionary of the English Language (1755)
+     </p>
+
+     <xmp>
+<p class="text-ellipsis">
+    Honour (also honor in American English, see spelling differences; from the Latin word honor) is an abstract concept entailing 
+    a perceived quality of worthiness and respectability that affects both the social standing and the self-evaluation of 
+    an individual or corporate body such as a family, school, regiment or nation. Accordingly, individuals (or corporate bodies)
+    are assigned worth and stature based on the harmony of their actions with a specific code of honour, and the moral code of 
+    the society at large.Dr Samuel Johnson, in his A Dictionary of the English Language (1755)
+</p>     
+     </xmp>
+   </section>
+
+   <section class="box">
+     <h3>clearfix</h3>
+     <ul class="unstyled-list demo-float clearfix align-center">
+       <li class="bg-indigo fg-white align-center">indigo</li>
+       <li class="bg-emerald fg-white align-center">emerald</li>
+       <li class="bg-teal fg-white align-center">teal</li>
+       <li class="bg-pink fg-white align-center">pink</li>
+     </ul>
+<xmp>
+  <ul class="clearfix">
+    ...
+  </ul>
+
+</xmp>
+   </section>
+
+   <section class="box">
+     <h3 class="fg-orange">line clamp  (only useful on webkit)</h3>
+     <div style="width: 400px;">
+        <p class="line-clamp2">Honour (also honor in American English, see spelling differences; from the Latin word honor) is an abstract concept entailing 
+    a perceived quality of worthiness and respectability that affects both the social standing and the self-evaluation of 
+    an individual or corporate body such as a family, school, regiment or nation. Accordingly, individuals (or corporate bodies)
+    are assigned worth and stature based on the harmony of their actions with a specific code of honour, and the moral code of 
+    the society at large.Dr Samuel Johnson, in his A Dictionary of the English Language (1755)</p>
+     </div>
+     <div style="width: 400px;">
+<p class="line-clamp3">Honour (also honor in American English, see spelling differences; from the Latin word honor) is an abstract concept entailing 
+    a perceived quality of worthiness and respectability that affects both the social standing and the self-evaluation of 
+    an individual or corporate body such as a family, school, regiment or nation. Accordingly, individuals (or corporate bodies)
+    are assigned worth and stature based on the harmony of their actions with a specific code of honour, and the moral code of 
+    the society at large.Dr Samuel Johnson, in his A Dictionary of the English Language (1755)</p>
+     </div>
+     <div style="width: 400px;">
+<p class="line-clamp4">Honour (also honor in American English, see spelling differences; from the Latin word honor) is an abstract concept entailing 
+    a perceived quality of worthiness and respectability that affects both the social standing and the self-evaluation of 
+    an individual or corporate body such as a family, school, regiment or nation. Accordingly, individuals (or corporate bodies)
+    are assigned worth and stature based on the harmony of their actions with a specific code of honour, and the moral code of 
+    the society at large.Dr Samuel Johnson, in his A Dictionary of the English Language (1755)</p>
+     </div>
+   </section>
+   <xmp>
+<p class="line-clamp1">...</p>
+<p class="line-clamp2">...</p>
+<p class="line-clamp3">...</p>
+   </xmp>
+   <br><br><br>
 </body>
 </html>
