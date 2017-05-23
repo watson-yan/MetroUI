@@ -1,5 +1,5 @@
-@for $i from 2 to 12 {
-  .flex-grid .row .cell.size#{$i} {
+@for $i from 1 to 13 {
+  .flex-grid .row .cell.colspan#{$i} {
     -webkit-flex: 0 0 #{$i * 8.33%};
     flex: 0 0 #{$i * 8.33%};
   }
@@ -16,6 +16,18 @@
     .cell {
       -webkit-flex: 0 0 50%;
       flex: 0 0 8.33333333%;
+    }
+    &.flex-just-end {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+    }
+     &.flex-just-sa {
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+    }
+     &.flex-just-sb {
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
     }
   }
 }

@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <h3 class="title">Grid system</h3>
+  <h2 class="title">Grid system</h2>
   <section class="box">
     <h3>Flex cell</h3>
     <div class="flex-grid demo-grid">
@@ -30,13 +30,68 @@
         <section class="cell">cell</section>
         <section class="cell">cell</section>
       </div>
-
+      <br>
+       <div class="row">
+        <section class="cell colspan2">colspan2</section>
+        <section class="cell colspan4">colspan4</section>
+        <section class="cell colspan6">colspan6</section>
+      </div>  
+    </div>
+    <br>
+    <div class="flex-grid demo-grid">
       <div class="row">
-        <section class="cell2">cell2</section>
-        <section class="cell2">cell2</section>
-        <section class="cell2">cell2</section>
+        <section class="cell colspan4">colspan4</section>
+        <section class="cell colspan8">colspan8</section>
+      </div>
+      <br>
+      <div class="row">
+        <section class="cell colspan12">colspan12</section>
+      </div>
+    </div>
+    <br>
+    <div class="flex-grid demo-grid">
+      <div class="row">
+        <section class="cell colspan1">colspan1</section>
+        <section class="cell colspan2">colspan2</section>
+        <section class="cell colspan3">colspan3</section>
+      </div>
+      <br>
+      <div class="row">
+        <section class="cell colspan12">colspan12</section>
+      </div>
+    </div>
+    <br>
+    <div class="flex-grid demo-grid">
+      <h3>Justify content</h3>
+      <span>justify-start</span>
+      <div class="row">
+        <section class="cell">1</section>
+        <section class="cell">2</section>
+        <section class="cell">3</section>
+      </div>
+      <br>
+      <span>justify-end</span>
+      <div class="row flex-just-end">
+        <section class="cell">1</section>
+        <section class="cell">2</section>
+        <section class="cell">3</section>
+      </div>
+      <br>
+      <span>space-around</span>
+      <div class="row flex-just-sa">
+        <section class="cell">1</section>
+        <section class="cell">2</section>
+        <section class="cell">3</section>
+      </div>
+      <br>
+      <span>space-between</span>
+      <div class="row flex-just-sb">
+        <section class="cell">1</section>
+        <section class="cell">2</section>
+        <section class="cell">3</section>
       </div>
     </div>
   </section>
+  <br><br><br>
 </body>
 </html>

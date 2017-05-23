@@ -1,7 +1,7 @@
 /** 
 * margin
 */
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
   .margin#{$i * 5} {
     margin: #{$i * 5}px;
   }
@@ -25,7 +25,7 @@
 /**
 * padding
 */
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
   .padding#{$i * 5} {
     padding: #{$i * 5}px;
   }

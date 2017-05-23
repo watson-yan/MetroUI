@@ -28,6 +28,9 @@
 .margin45 {
   margin: 45px; }
 
+.margin50 {
+  margin: 50px; }
+
 .no-margin {
   margin: 0; }
 
@@ -72,6 +75,9 @@
 
 .padding45 {
   padding: 45px; }
+
+.padding50 {
+  padding: 50px; }
 
 .no-padding {
   padding: 0; }
